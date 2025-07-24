@@ -14,7 +14,7 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+
     text-decoration: none;
 }
 body{
@@ -36,9 +36,12 @@ nav ul{
     gap: 1.8rem;
     align-items: center;
 }
+nav ul li {
+    list-style: none;
+}
 .nav-hero{
     display: flex;
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
     padding: 30px;
     align-items: center;
@@ -64,7 +67,7 @@ nav ul{
     color: #a9a4a4;
 }
 .about-container{
-    text-align: center;
+  text-align: center;
 }
 .about-title{
     width: 50%;
@@ -97,7 +100,7 @@ nav ul{
     background-color:#E95A08;
 }
 .card{
-    width: 1180px;
+    width: 1240px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -106,7 +109,54 @@ nav ul{
     
     
 }
+.about-blog{
+    position: relative;
+    margin: 180px auto;
+    width: 1240px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+}
+.blog-img img{
+  
+   height: 30rem;
+   width: 35rem;
+}
+ .blog{
+    width:25rem;
+    letter-spacing: 1px;
+    padding-left: 80px;
+    font-weight: 600;
+    color: #4a4949;
+ }
 
+.blog h3{
+    font-size: 3rem;
+    color: black;
+    
+}
+.badge{
+  position: absolute;
+  top:-65px ;
+  left: 450px;
+}
+.badge img {
+    height: 200px;
+    width: 200px;
+}
+.latest{
+    width: 800px;
+    margin: 0 auto;
+   text-align: center;
+  
+}
+.latest h3{
+     font-size: 2.3rem;
+}
+.latest p{
+    font-size: 1rem;
+}
 @media screen and (max-width:576px){
 
     nav{
@@ -157,21 +207,65 @@ nav ul{
         
     
     }
+    .about-title p{
+          font-size: 14px;
+          
+    }
     .card{
         width: 100%;
         height: auto;
-        margin: 0 5px;
+    
         padding: 0;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,250px);
-        gap:25px;
+        
         
     }
-
+    .badge{
+        display: none;
+    }
     
-    
+    .box{
+       margin-top: 10px;
+    }
     .box img{
         height: 190px;
     }
+    .about-blog{
+        width: 100%;
+        height: auto;
+        flex-direction:column ;
+        margin-top: 100px;
+        padding: 0;
+    }
+    .blog{
+        margin-top:10px ;
+        padding: 0;
+        width: 100%;
+    }
+    .blog h3{
+        font-size: 2rem;
+    }
+    .blog li{
+        font-size: 0.7rem;
+    }
+    .blog-img{
+        width: 100%;
+       
+        
+    }
+    .blog-img img{
+        height: 400px;
+        width:100%;
+    }
+   .latest{
+    width: 100%;
+   }
+   .latest h3{
+    font-size: 1.5rem;
+   }
+   .latest p{
+    font-size: 0.7rem;
+   }
    
 }
