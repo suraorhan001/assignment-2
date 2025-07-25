@@ -184,24 +184,37 @@ nav ul li {
     display: flex;
     width: 1000px;
     height: 500px;
-    
     margin: 0 auto;
     gap: 10px;
 }
  .box-1{
     width:360px ;
+   
  }
     
 .cell{
  width: 360px;
  height: 200px;
- position: absolute;
- background-image: url(B12A02-Responsive-Flowers/assets/deal-bloom.png);
+ 
+ position:relative;
+  background-image: url(B12A02-Responsive-Flowers/assets/deal-bloom.png);
  overflow: hidden;
 background-size:cover;
 background-position: center;
  border-radius: 10px;
  
+}
+.cell-2 {
+    width: 360px;
+  height: 200px;
+ 
+   background-image: url(B12A02-Responsive-Flowers/assets/deal-ana.png);
+    position: relative;
+    margin-top: 15px;
+    overflow: hidden;
+  background-size:cover;
+  background-position: center;
+  border-radius: 10px;
 }
 
 
@@ -217,17 +230,7 @@ background-position: center;
 
 
 }
-.cell-2 {
-    width: 360px;
-  height: 200px;
-  background-image: url(B12A02-Responsive-Flowers/assets/deal-ana.png);
-    position: relative;
-    margin-top: 220px;
-    overflow: hidden;
-  background-size:cover;
-  background-position: center;
-  border-radius: 10px;
-}
+
 
     
 .heading-div{
@@ -263,13 +266,17 @@ background-position: center;
 }
 .h-box{
     margin-top: 20%;
-     
+   padding-left: 20px;
 }
 .h-box  h3{
     font-size: 1.6rem;
 }
 .h-box1{
     margin-top: 20%;
+ 
+}
+.h-box1  h3{
+    font-size: 1.6rem;
 }
 
 .h-box1 button{
@@ -295,6 +302,7 @@ background-position: center;
 }
 .h-box2{
     margin-top: 30%;
+    padding-left:20px;
      
 }
 .h-box2  h3{
@@ -459,14 +467,14 @@ background-position: center;
     width: 100%;
    }
    .cell{
-    width:270px;
+    width:100%;
      height: 160px;
  }
  .cell img{
-    width: 270px;
+    width:100%;
  }
   .cell-2{
-    margin-top:170px;
+    margin-top:10px;
     width:100%;
      height: 160px;
  }
@@ -476,12 +484,13 @@ background-position: center;
    .box-2{
      width:100%;
     height: 160px;
-    
    }
    
    .heading-div{
     width: 100%;
    }
+   
+   
    .h-box{
     margin-top:70px;
     margin-left:45px;
@@ -490,19 +499,28 @@ background-position: center;
       font-size: 1.2rem;
    }
    .h-box button{
-    font-size: 1rem;
+    font-size: 1rem;}
+    .h-box1{
+    margin-top:70px;
+    margin-left:30px;
    }
+   .h-box1 h3{
+      font-size: 1.2rem;
+   }
+   .h-box1 button{
+    font-size: 1rem;}
+
+
      .h-box1 button{
         font-size: 1rem;
      }
 
    .heading-div2{
-    width:330px;
+    width:100%;
     height: 200px;
    }
 
-
-   .h-box2{
+.h-box2{
     margin-top:70px;
     margin-left: 50px;
    }
@@ -512,5 +530,8 @@ background-position: center;
    .h-box2 button{
     font-size: 1rem;
    }
+
+ 
+   
 
 }
