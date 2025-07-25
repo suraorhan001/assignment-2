@@ -59,6 +59,7 @@ nav ul li {
 .bx-cart-alt{
     font-size: 1.9rem;
     padding-top: 10px;
+    color: #4a4949;
 }
 
 .nav-hero{
@@ -163,7 +164,15 @@ nav ul li {
   position: absolute;
   top:-65px ;
   left: 450px;
-}
+  }
+  .badge:hover{
+   transition: 3s ease;
+   transform: rotate(360deg);
+
+
+ }
+
+
 .badge img {
     height: 200px;
     width: 200px;
