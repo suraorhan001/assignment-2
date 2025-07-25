@@ -184,7 +184,7 @@ nav ul li {
     display: flex;
     width: 1000px;
     height: 500px;
-    border: 2px solid;
+    
     margin: 0 auto;
     gap: 10px;
 }
@@ -232,7 +232,7 @@ background-position: center;
     
 .heading-div{
     position: absolute;
-    color: rgb(248, 249, 250);top:45%;
+    color: rgb(248, 249, 250);
     top: 0;
     left: 0;
     height:200px ;
@@ -268,6 +268,21 @@ background-position: center;
 .h-box  h3{
     font-size: 1.6rem;
 }
+.h-box1{
+    margin-top: 20%;
+}
+
+.h-box1 button{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color:white ;
+    text-decoration: underline;
+
+}
+
 
 .h-box button{
     width: 120px;
@@ -327,15 +342,16 @@ background-position: center;
    
     .nav-hero{
         flex-direction: column-reverse;
-        margin: 0;
+        margin: 0 10px;
         padding: 0px;
-        width:350px;
+        width:calc(100% - 20px);
         
     }
 
     .nav-description{
         padding:0 0 10px 0;
         margin: 0 ;
+      
         width:calc(100% - 20px);
     }
     .nav-description h1{
@@ -352,7 +368,9 @@ background-position: center;
     .about-container{
         margin: 0;
         padding: 0;
-        width: 350px;
+        width: calc(100% -200px);
+       
+       
     }
     .about-title{
         width: calc(100% - 20px);
@@ -362,32 +380,39 @@ background-position: center;
           
     }
     .card{
-        width:calc(100% - 30px) ;
+        width:calc(100% - 20px);
         height: auto;
         padding: 0;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,250px);
          gap: 20px;
     }
+
     .badge{
         display: none;
     }
     
     .box{
-       margin-top: 10px;
+       padding-top: 20px;
        
     }
     .box img{
-        height: 190px;
+        height: 150px;
         
     }
+    .box button{
+        width: 100px;
+        height: 40px;
+        font-size: 11px;
+    }
+   
     .about-blog{
-        width:calc(100% - 20px) ;
-        margin:90px 0 40px 0;
-        padding:0 10px 0 1opx;
+        width:calc(100% - 10px) ;
+        margin:90px 5px 40px 5px;
+        padding:0 10px 0 1px;
         height: auto;
-        flex-direction:column ;
         
+        flex-direction:column ;
         padding: 0;
     }
     .blog{
@@ -404,16 +429,16 @@ background-position: center;
         letter-spacing: 0;
     }
     .blog-img{
-        width: calc(100% - 30px);
+        width:100%;
     }
     .blog-img img{
         height: 300px;
-        width: 320px;
+        width:100%;
         
     }
    .latest{
     width:calc(100% - 30px);
-    border: 2px solid;
+    
    }
    .latest h3{
     font-size: 1.5rem;
@@ -421,37 +446,56 @@ background-position: center;
    .latest p{
     font-size: 0.5rem;
    }
+
+
+
    .discount{
-    margin: 0;
+    margin: 0 10px;
     height: auto;
     width: calc(100% - 30px);
     flex-direction: column;
-   
-    
    }
    .box-1{
-    width: calc(100% - 30px);
+    width: 100%;
    }
    .cell{
-    width:100%;
-     height: 180px;
+    width:270px;
+     height: 160px;
  }
  .cell img{
-    width: 100%;
+    width: 270px;
  }
   .cell-2{
-    margin-top:190px;
+    margin-top:170px;
     width:100%;
-     height: 180px;
+     height: 160px;
  }
  .cell-2 img{
     width:100%;
  }
    .box-2{
-     width: calc(100% - 30px);
-    height: 200px;
+     width:100%;
+    height: 160px;
     
    }
+   
+   .heading-div{
+    width: 100%;
+   }
+   .h-box{
+    margin-top:70px;
+    margin-left:45px;
+   }
+   .h-box h3{
+      font-size: 1.2rem;
+   }
+   .h-box button{
+    font-size: 1rem;
+   }
+     .h-box1 button{
+        font-size: 1rem;
+     }
+
    .heading-div2{
     width:330px;
     height: 200px;
@@ -459,9 +503,14 @@ background-position: center;
 
 
    .h-box2{
-    margin-top: 25%;
+    margin-top:70px;
+    margin-left: 50px;
    }
    .h-box2 h3{
-  font-size: 1.6rem;
+      font-size: 1.2rem;
    }
+   .h-box2 button{
+    font-size: 1rem;
+   }
+
 }
