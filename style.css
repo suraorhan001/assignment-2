@@ -456,6 +456,7 @@ background-position: center;
         flex-direction: column-reverse;
         margin: 0 10px;
         padding: 0px;
+        height: 400px;
         width:calc(100% - 20px);
         
     }
@@ -463,11 +464,10 @@ background-position: center;
     .nav-description{
         padding:0 0 10px 0;
         margin: 0 ;
-      
         width:calc(100% - 20px);
     }
     .nav-description h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .nav-description p{
         font-size: 13px;
@@ -486,6 +486,9 @@ background-position: center;
     }
     .about-title{
         width: calc(100% - 20px);
+    }
+    .about-title h3{
+        font-size: 1.4rem;
     }
     .about-title p{
           font-size: 14px;
