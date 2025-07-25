@@ -606,7 +606,7 @@ background-position: center;
    
    .h-box{
     margin-top:70px;
-    margin-left:45px;
+    /* margin-left:45px; */
    }
    .h-box h3{
       font-size: 1.2rem;
@@ -615,7 +615,7 @@ background-position: center;
     font-size: 1rem;}
     .h-box1{
     margin-top:70px;
-    margin-left:30px;
+    /* margin-left:30px; */
    }
    .h-box1 h3{
       font-size: 1.2rem;
@@ -635,7 +635,8 @@ background-position: center;
 
 .h-box2{
     margin-top:70px;
-    margin-left: 50px;
+    padding-left: 75px;
+    /* margin-left:50px; */
    }
    .h-box2 h3{
       font-size: 1.2rem;
