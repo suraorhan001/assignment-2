@@ -39,6 +39,28 @@ nav ul{
 nav ul li {
     list-style: none;
 }
+.li-first a{
+    color: #1d1c1c;
+    font-weight: 600;
+}
+.li-middle a{
+    font-weight: 600;
+    color: #757373;
+}
+.li-last a{
+    color: #1d1c1c;
+    font-weight: 600;
+    display: flex;
+}
+.li-last a p{
+    padding-top:15px;
+    
+}
+.bx-cart-alt{
+    font-size: 1.9rem;
+    padding-top: 10px;
+}
+
 .nav-hero{
     display: flex;
     width: 1240px;
@@ -124,7 +146,7 @@ nav ul li {
    width: 35rem;
 }
  .blog{
-    width:25rem;
+    width:400px;
     letter-spacing: 1px;
     padding-left: 80px;
     font-weight: 600;
@@ -157,13 +179,137 @@ nav ul li {
 .latest p{
     font-size: 1rem;
 }
+
+.discount{
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid;
+    margin: 0 auto;
+    gap: 10px;
+}
+ .box-1{
+    width:360px ;
+ }
+    
+.cell{
+ width: 360px;
+ height: 200px;
+ position: absolute;
+ background-image: url(B12A02-Responsive-Flowers/assets/deal-bloom.png);
+ overflow: hidden;
+background-size:cover;
+background-position: center;
+ border-radius: 10px;
+ 
+}
+
+
+.box-2{
+    position: relative;
+    width:600px;
+    height: 420px;
+    background-image:url(B12A02-Responsive-Flowers/assets/deal-zabo.png);
+    border-radius: 10px;
+    overflow: hidden;
+background-size:cover;
+background-position: center;
+
+
+}
+.cell-2 {
+    width: 360px;
+  height: 200px;
+  background-image: url(B12A02-Responsive-Flowers/assets/deal-ana.png);
+    position: relative;
+    margin-top: 220px;
+    overflow: hidden;
+  background-size:cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+    
+.heading-div{
+    position: absolute;
+    color: rgb(248, 249, 250);top:45%;
+    top: 0;
+    left: 0;
+    height:200px ;
+    width: 360px;
+    background-color: rgba(32, 32, 32, 0.6);
+   text-align: center;
+
+}
+.heading-div1{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+     height:200px;
+    width: 360px;
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.6);
+}
+.heading-div2{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+     height:420px;
+    width:600px;
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.6);
+}
+.h-box{
+    margin-top: 20%;
+     
+}
+.h-box  h3{
+    font-size: 1.6rem;
+}
+
+.h-box button{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color:white ;
+    text-decoration: underline;
+}
+.h-box2{
+    margin-top: 30%;
+     
+}
+.h-box2  h3{
+    font-size: 2rem;
+}
+
+.h-box2 button{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color:white ;
+    text-decoration: underline;
+}
+
 @media screen and (max-width:576px){
 
     nav{
         margin: 10px;
     } 
-    .bxs-cart{
-        font-size: 1.5rem;
+    nav img{
+        height: 70px;
+        width: 110px;
+    }
+    .li-last p{
+        font-size: 1rem;
+    }
+    .bx-cart-al{
+        font-size: 1.2rem;
     }
    
     nav ul li{
@@ -182,44 +328,46 @@ nav ul li {
     .nav-hero{
         flex-direction: column-reverse;
         margin: 0;
-        padding: 0;
-        width:100%;
+        padding: 0px;
+        width:350px;
+        
     }
 
     .nav-description{
-        padding: 0;
-        margin:20px 0 ;
+        padding:0 0 10px 0;
+        margin: 0 ;
+        width:calc(100% - 20px);
     }
     .nav-description h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .nav-description p{
         font-size: 13px;
     }
     .nav-hero img{
         height: 250px;
-        width: 90%;
+        width: 100%;
     }
 
     .about-container{
         margin: 0;
         padding: 0;
-        
-    
+        width: 350px;
+    }
+    .about-title{
+        width: calc(100% - 20px);
     }
     .about-title p{
           font-size: 14px;
           
     }
     .card{
-        width: 100%;
+        width:calc(100% - 30px) ;
         height: auto;
-    
         padding: 0;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,250px);
-        
-        
+         gap: 20px;
     }
     .badge{
         display: none;
@@ -227,45 +375,93 @@ nav ul li {
     
     .box{
        margin-top: 10px;
+       
     }
     .box img{
         height: 190px;
+        
     }
     .about-blog{
-        width: 100%;
+        width:calc(100% - 20px) ;
+        margin:90px 0 40px 0;
+        padding:0 10px 0 1opx;
         height: auto;
         flex-direction:column ;
-        margin-top: 100px;
+        
         padding: 0;
     }
     .blog{
-        margin-top:10px ;
-        padding: 0;
-        width: 100%;
+       text-align: start;
+        margin:0 ;
+        padding-left:30px;
+        width: calc(100% - 30px);
     }
     .blog h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .blog li{
         font-size: 0.7rem;
+        letter-spacing: 0;
     }
     .blog-img{
-        width: 100%;
-       
-        
+        width: calc(100% - 30px);
     }
     .blog-img img{
-        height: 400px;
-        width:100%;
+        height: 300px;
+        width: 320px;
+        
     }
    .latest{
-    width: 100%;
+    width:calc(100% - 30px);
+    border: 2px solid;
    }
    .latest h3{
     font-size: 1.5rem;
    }
    .latest p{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
    }
+   .discount{
+    margin: 0;
+    height: auto;
+    width: calc(100% - 30px);
+    flex-direction: column;
    
+    
+   }
+   .box-1{
+    width: calc(100% - 30px);
+   }
+   .cell{
+    width:100%;
+     height: 180px;
+ }
+ .cell img{
+    width: 100%;
+ }
+  .cell-2{
+    margin-top:190px;
+    width:100%;
+     height: 180px;
+ }
+ .cell-2 img{
+    width:100%;
+ }
+   .box-2{
+     width: calc(100% - 30px);
+    height: 200px;
+    
+   }
+   .heading-div2{
+    width:330px;
+    height: 200px;
+   }
+
+
+   .h-box2{
+    margin-top: 25%;
+   }
+   .h-box2 h3{
+  font-size: 1.6rem;
+   }
 }
